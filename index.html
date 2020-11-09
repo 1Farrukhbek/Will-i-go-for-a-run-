@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping List</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-warning" >
+  
+  <div class="container text-center">
+    <h2 class="h1">Will I go for a run?</h2>
+    <div class="display-2 my-3 p-3 rounded alert-success js-result-output">Yes, I will./No, I won't.</div>
+    
+    <form class="js-form" action="https:/echo.htmlacademy.ru" method="GET">
+      <div class="form-group d-flex align-items-center justify-content-center">
+        <label class="h3 mr-3" for="temperature-input">Temperature</label>
+        <input class="form-control w-25 js-temperature-input" type="text" step="any" id="temperature-input" name="temperature">
+      </div>
+      
+      <div class="form-group">
+        <div class="custom-control custom-switch mb-1">
+          <input type="checkbox" class="swith__custom custom-control-input js-raining-switch" id="customSwitch">
+          <label class="custom-control-label h4 text-white" for="customSwitch">Is Raining.</label>
+        </div>
+
+        <div class="custom-control custom-switch mb-1">
+          <input type="checkbox" class="swith__custom custom-control-input js-gym-switch" id="customSwitch2">
+          <label class="custom-control-label h4 text-white" for="customSwitch2">GYM open.</label>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
