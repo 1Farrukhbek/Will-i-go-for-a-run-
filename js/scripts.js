@@ -12,8 +12,8 @@ var run = function (evt) {
   var inputTemperature = parseInt(elTemperatureInput.value.trim(), 10);
   
   // O'zgaruvchilar yasab olish
-  var minTemperatureForRun = '5';
-  var maxTemperatureForRun = '30';
+  var minTemperatureForRun = 5;
+  var maxTemperatureForRun = 30;
   var normalTemperatureForRun = minTemperatureForRun <= inputTemperature && inputTemperature <= maxTemperatureForRun;
   var statusOfRain = elRainingSwitch;
   var statusOfGym = elGymSwitch;
